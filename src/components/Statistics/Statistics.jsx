@@ -4,7 +4,7 @@ const Statistics = ({ title = '', statArray }) => {
     
     return (
         <section className={css.statistics}>
-            {title.length > 0 &&
+            {title &&
                 <h2 className={css.title}>{title}</h2>}
             <ul className={css.stat_list}>
                 {statArray.map((stat) => (
